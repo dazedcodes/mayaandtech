@@ -10,32 +10,57 @@ import carletonPhoto from '../assets/carletonPhoto.png';
 export default function Experience() {
     return (
         <div className="experience parallax">
+            <div className="experienceHeader">
             <PageHeader
-                title="Experience"
-                subtitle="THAT BRINGS IMPACT"
+                title="Experiences"
+                subtitle="THAT BRING IMPACT"
                 paragraph=""
             />
-
-            <Position
-                positionImage={gwcPhoto}
-                positionRole="Teaching Assistant"
-            />
-            <Position
-                positionImage={ixPhoto}
-                positionRole="Mentor + Business Developer"
-            />
-            <Position
-                positionImage={h4iPhoto}
-                positionRole="Software Developer"
-            />
-            <Position
-                positionImage={regenizePhoto}
-                positionRole="Backend Developer Intern"
-            />
-            <Position
-                positionImage={carletonPhoto}
-                positionRole="IT Support Specialist"
-            />
+            </div>
+            
+            <div className="experiencesContainer">
+            <div className="experienceCont-Item">
+                <Position
+                    ImageAlt="Girls Who Code Logo"
+                    positionImage={gwcPhoto}
+                    positionLink="https://girlswhocode.com/"
+                    positionRole="Teaching Assistant"
+                />
+            </div>
+            <div className="experienceCont-Item">
+                <Position
+                    ImageAlt="iXperience Logo"
+                    positionImage={ixPhoto}
+                    positionLink="http://ixlink.co/maya-m70"
+                    positionRole="Mentor + Business Developer"
+                />
+            </div>
+            <div className="experienceCont-Item">
+                <Position
+                    ImageAlt="Hack4ImpactLogo"
+                    positionImage={h4iPhoto}
+                    positionLink="https://hack4impact.org/"
+                    positionRole="Software Developer"
+                />
+            </div>
+            <div className="experienceCont-Item">
+                <Position
+                    ImageAlt="Regenize Logo"
+                    positionImage={regenizePhoto}
+                    positionLink="https://www.regenize.co.za/"
+                    positionRole="Backend Developer Intern"
+                />
+            </div>
+            <div className="experienceCont-Item">
+                <Position
+                    ImageAlt="Carleton College Logo"
+                    positionImage={carletonPhoto}
+                    positionLink="https://www.carleton.edu/"
+                    positionRole="IT Support Specialist"
+                />
+            </div>
+            </div>
+            
         </div>
     )
 }

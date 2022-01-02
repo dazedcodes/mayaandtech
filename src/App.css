@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Forum&display=swap');
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
   margin: 0%;
 }
 
-.App-header {
+.App-body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,14 +24,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
 .navbar {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.637);
   overflow: hidden;
   position: fixed;
   width: 100%;
 }
 
-.navbar a {
+.navbar p {
   float: left;
   display: block;
   list-style-type: none;
@@ -35,24 +47,22 @@
   color: black;
   font-weight: lighter;
   font-size: 18px;
-  font-family: "Poppins", sans-serif;
-  /* font-weight: bold; */
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
-.navbar a:hover {
+.navbar p:hover {
   background-color: #af7153;
   opacity: 0.8;
   color: white;
 }
 
-.navbar a.active {
+.navbar p.active {
   background-color: #af7153;
   opacity: 0.8;
   color: white;
-}
-
-.navbar .icon {
-  display: none;
 }
 
 .home {
@@ -64,85 +74,397 @@
   height: 100%;
   width: 100%;
 }
-
+.home h1 {
+  font-family: 'Forum', cursive;
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  font-size: 450%;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+.home h3 {
+  font-size: 20px;
+  font-weight: 400;
+  padding:0% 10%;
+  margin-bottom: 5%;
+  text-align: center;
+  letter-spacing: 2px;
+  
+}
 .aboutme {
   display: flex;
+
   flex-direction: row;
-  background-image: url(./assets/aboutme-background.png);
-  padding: 15%;
-  height: 100%;
+  align-items: center;
+  background-color: #563727;
+  padding: 5%;
+  height: 700px;
   width: 100%;
+  color: whitesmoke;
 }
 .aboutmeProfilePic {
-  height: 25%;
-  width: 25%;
+  border-radius: 50%;
+  padding: 5%;
+  height: 30%;
+  width: 30%;
+}
+.aboutme h1 {
+  font-family: 'Forum', cursive;
+  text-align: left;
+  font-size: 400%;
+  font-weight: 100;
+  margin-top:0%;
+  margin-bottom: 0%;
+  margin-left: 10%;
+}
+.aboutme h3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+  text-align: left;
+  margin-left: 10%;
+}
+.aboutme p {
+  font-family: 'DM Sans', sans-serif;
+  text-align: left;
+  margin-left: 10%;
+  font-size: calc(2px + 3vmin);
+  padding-right: 10%;
 }
 .projects {
   display: flex;
-  flex-direction: row;
-  background-image: url(./assets/projects-background.png);
-  padding: 15%;
-  height: 100%;
-  width: 100%;
-}
-.projectImage {
-  border-radius: 50%;
-  margin-right: 7%;
+  flex-direction: column;
+  background-image: url(./assets/experience-background.png);
+ 
   padding: 5%;
-  height:45%;
-  width: 80%;
+  height: 800px;
+  width: 100%;
+  color: white;
 }
-.projectName {
-  background-color: #fff; 
-  opacity: 0.5;
-  border-style: none;
-  box-shadow: 25px;
+.projectHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.projects h1 {
+  font-family: 'Forum', cursive;
+  text-align: center;
+  font-size: 400%;
+  font-weight: 100;
+  margin-bottom: 0%;
+}
+.projects h3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
   letter-spacing: 2px;
-  width:90%;
-  padding: 4%;
-  margin-right: 7%;
-  font-size: calc(2px + 2vmin);
+  text-align: center;
 }
-.projectDesc {
-  text-align: justify;
-  font-size: calc(1px + 2vmin);
-  padding: 5% 10%;
+.projects p {
+  font-family: 'DM Sans', sans-serif;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: calc(2px + 3vmin);
+}
+.projects .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+.buttonContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  padding: 5px;
+  margin-left: 4%;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: rgba(223, 215, 202,0.5);
+  font-family: 'DM Sans', sans-serif;
+  color: black;
+  cursor: pointer;
+  width: 350px;
+  height: 100px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 150%;
+  transition: 0.5s;
+  padding-right: 0%;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  width: 100%; 
   color: black;
 }
-.descBackground {
-  background-color: #fff; 
-  opacity: 0.5;
-  height: 30%;
-  width: 90%;
-  margin: 1%;
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 30px;
+  width: 290px;
+  display: none;
+  overflow: hidden;
+  background-color: rgba(223, 215, 202,0.5);
+}
+.content p {
+  font-size: 95%;
+  text-align: center;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.content button {
+  background-color: #7c5e4f;
+  border-radius: 5%;
+  font-size: 75%;
+  padding: 5%;
+  color: white;
+  border-style: none;
+  transition: 0.4s;
+  cursor: pointer;
+  margin: 15px 5px;
 }
 .motto {
-  background-image: url(./assets/motto-background.png);
-  padding: 20% 15%;
+  background-color: #563727;
   height: 100%;
   width: 100%;
+}
+.quote {
+  font-family: 'Forum', cursive;
+  text-align: center;
+  font-size: 370%;
+  font-weight: 100;
+  padding: 2%;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  color: white;
+}
+.author {
+  letter-spacing: 2px;
+  font-size: 100%;
+  font-style: italic;
+  color: white;
+  margin-bottom: 5%;
+}
+.motto hr {
+  border: 1px solid white;
+  width: 30%;
 }
 .experience {
   display: flex;
-  flex-direction: row;
-  background-image: url(./assets/experience-background.png);
-  padding: 15%;
-  height: 100%;
+  flex-direction: column;
+  background-image: url(./assets/motto-background.png);
+  padding: 7%;
+  height: 800px;
   width: 100%;
 }
+.experience h1 {
+  font-family: 'Forum', cursive;
+  font-size: 350%;
+  font-weight: 100;
+  margin-left: 5%;
+  margin-bottom: 0%;
+}
+.experience h3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 0%;
+  margin-left: 7%;
+  letter-spacing: 2px;
+}
+.experienceHeader {
+  display: flex;
+  flex-direction: row;
+}
+.experiencesContainer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 2%;
+}
+.experienceCont-Item {
+  margin: 3%;
+}
 .experienceImage {
+  background-color: rgba(223, 215, 202,0.4);
+  border-radius: 5%;
+  padding: 5%;
   height: 10rem;
   width: 10rem;
 }
 .experienceRole {
-  color:black;
-  background-color: #fff; 
-  opacity: 0.5;
+  border-radius: 5%;
   margin: 2%;
 }
 .contact {
   background-image: url(./assets/letsconnect-background.png);
   padding: 15%;
+  height: 800px;
+  width: 100%;
+}
+.contact h1 {
+  font-family: 'Forum', cursive;
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  font-size: 400%;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+.email {
+  background-color: #563727;
+  font-size: calc(2px + 3vmin);
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: white;
+  padding: 10px 25px;
+  border-style: none;
+  transition: 0.4s;
+  cursor: pointer;
+  margin: 5px;
+}
+.email:hover {
+  background-color: white; 
+  color: #563727;
+}
+.linkedin {
+  background-color: black;
+  font-size: calc(2px + 3vmin);
+  letter-spacing: 2px;
+  border-style: none;
+  cursor: pointer;
+  font-weight: 400;
+  color: whitesmoke;
+  padding: 10px 25px;
+  transition: 0.4s;
+}
+
+.linkedin:hover {
+  background-color: white; 
+  color: #563727;
+}
+a.link {
+  color: white;
+  text-decoration: none;
+}
+.vfd-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/projects-background.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  height: 800px;
+}
+.vfd-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.vfd-header{
+  margin: 5%;
+}
+.vfd-header h1 {
+  font-family: 'Forum', cursive;
+  color: #000;
+  font-size: 300%;
+  font-weight: 100;
+}
+.vfd-header h3 {
+  margin-left: 2%;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #000;
+  margin-bottom: 3%;
+}
+.vfd-header h1, h3 {
+  text-align: left;
+  margin: 0%;
+}
+.vfd-photo {
+  height: 30%;
+  width: 30%;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.joke-container {
+  background-color: #7c5e4f;
+  border-radius: 10%;
+  opacity: 0.8;
+  margin-right: 2%;
+  padding: 10%;
+  height: 70%;
+  width: 70%;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #000;
   height: 100%;
   width: 100%;
+}
+.footer-tagline {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 2%;
+  margin-right: 35%;
+  width: 25%;
+}
+.footer-tagline p {
+  margin-right: 6%;
+}
+.footer h4 {
+  font-family: 'Forum', cursive;
+  margin-top: 15%;
+  margin-bottom: 0%;
+  font-size: 2rem;
+}
+.footer p {
+  font-size: 50%;
+  font-family: 'DM Sans', sans-serif;
+}
+.copyright {
+  display: flex;
+  margin-top: 10%;
+}
+
+.footer-explore {
+  margin-left: 4%;
+}
+.footer-explore h6{
+  margin-bottom: 25%;
+}
+.footer-explore p {
+  margin: 0%;
+}
+.footer-explore a {
+  text-decoration: none;
+  color: white;
+}
+#business-inquires {
+  margin-bottom: 10%;
 }
