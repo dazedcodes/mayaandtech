@@ -14,15 +14,14 @@ function App() {
   return (
     <Router>
         <div className="App">
-            <NavBar/>
           <div className="App-body">
             <Home/>
+            <AboutMe />
+            <Projects />
+            <Motto />
+            <Experience />
+            <Contact />
             <Routes>
-                <Route path="/aboutme" element={AboutMe()} />
-                <Route path="/projects/*" element={Projects()} />
-                <Route path="/motto"  element={Motto()} />
-                <Route path="/experience" element={Experience()} />
-                <Route path="/contact" element={Contact()} />
                 <Route path="/veryfunnydad-game" element={VeryFunnyDad()}/>
             </Routes>
             <Footer/>
