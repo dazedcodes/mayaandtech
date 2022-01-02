@@ -16,8 +16,8 @@ function App() {
         <div className="App">
             <NavBar/>
           <div className="App-body">
+            <Home/>
             <Routes>
-                <Route path="/hostedwebsite-mat" element={Home()} />
                 <Route path="/aboutme" element={AboutMe()} />
                 <Route path="/projects/*" element={Projects()} />
                 <Route path="/motto"  element={Motto()} />
