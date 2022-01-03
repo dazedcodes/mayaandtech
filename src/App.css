@@ -93,42 +93,41 @@ html, body {
 }
 .aboutme {
   display: flex;
-
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   background-color: #563727;
   padding: 5%;
-  height: 700px;
+  height: 100%;
   width: 100%;
   color: whitesmoke;
 }
 .aboutmeProfilePic {
   border-radius: 50%;
   padding: 5%;
-  height: 30%;
-  width: 30%;
+  height: 35%;
+  width: 35%;
 }
 .aboutme h1 {
   font-family: 'Forum', cursive;
-  text-align: left;
+  text-align:center;
   font-size: 400%;
   font-weight: 100;
   margin-top:0%;
   margin-bottom: 0%;
-  margin-left: 10%;
+  
 }
 .aboutme h3 {
   font-size: 20px;
   font-weight: 400;
   text-align: center;
   letter-spacing: 2px;
-  text-align: left;
-  margin-left: 10%;
+  text-align: center;
+  
 }
 .aboutme p {
   font-family: 'DM Sans', sans-serif;
-  text-align: left;
-  margin-left: 10%;
+  text-align: center;
+  margin-left: 5%;
   font-size: calc(2px + 3vmin);
   padding-right: 10%;
 }
@@ -138,7 +137,7 @@ html, body {
   background-image: url(./assets/experience-background.png);
  
   padding: 5%;
-  height: 800px;
+  height:100%;
   width: 100%;
   color: white;
 }
@@ -245,13 +244,30 @@ html, body {
   height: 100%;
   width: 100%;
 }
+.motto h1 {
+  font-family: 'Forum', cursive;
+  text-align: center;
+  font-size: 400%;
+  font-weight: 100;
+  margin-top:4%;
+  margin-bottom: 0%;
+  
+}
+.motto h3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+  text-align:center;
+
+}
 .quote {
   font-family: 'Forum', cursive;
   text-align: center;
   font-size: 370%;
   font-weight: 100;
   padding: 2%;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   margin-bottom: 2%;
   color: white;
 }
@@ -271,7 +287,7 @@ html, body {
   flex-direction: column;
   background-image: url(./assets/motto-background.png);
   padding: 7%;
-  height: 800px;
+  height: 950px;
   width: 100%;
 }
 .experience h1 {
@@ -318,7 +334,7 @@ html, body {
 .contact {
   background-image: url(./assets/letsconnect-background.png);
   padding: 15%;
-  height: 800px;
+  height: 100%;
   width: 100%;
 }
 .contact h1 {
@@ -364,60 +380,6 @@ html, body {
 a.link {
   color: white;
   text-decoration: none;
-}
-.vfd-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(./assets/projects-background.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width:100%;
-  height: 800px;
-}
-.vfd-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.vfd-header{
-  margin: 5%;
-}
-.vfd-header h1 {
-  font-family: 'Forum', cursive;
-  color: #000;
-  font-size: 300%;
-  font-weight: 100;
-}
-.vfd-header h3 {
-  margin-left: 2%;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  color: #000;
-  margin-bottom: 3%;
-}
-.vfd-header h1, h3 {
-  text-align: left;
-  margin: 0%;
-}
-.vfd-photo {
-  height: 30%;
-  width: 30%;
-  cursor: pointer;
-  border-radius: 50%;
-}
-.joke-container {
-  background-color: #7c5e4f;
-  border-radius: 10%;
-  opacity: 0.8;
-  margin-right: 2%;
-  padding: 10%;
-  height: 70%;
-  width: 70%;
 }
 .footer {
   display: flex;
