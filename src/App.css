@@ -93,7 +93,7 @@ html, body {
 }
 .aboutme {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   background-color: #563727;
   padding: 5%;
@@ -104,20 +104,23 @@ html, body {
 .aboutmeProfilePic {
   border-radius: 50%;
   padding: 5%;
-  height: 35%;
-  width: 35%;
+  height: 50%;
+  width: 75%;
+}
+.about-content {
+  margin: 5%;
 }
 .aboutme h1 {
   font-family: 'Forum', cursive;
   text-align:center;
-  font-size: 400%;
+  font-size: 350%;
   font-weight: 100;
   margin-top:0%;
   margin-bottom: 0%;
   
 }
 .aboutme h3 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
   text-align: center;
   letter-spacing: 2px;
@@ -128,7 +131,7 @@ html, body {
   font-family: 'DM Sans', sans-serif;
   text-align: center;
   margin-left: 5%;
-  font-size: calc(2px + 3vmin);
+  font-size: 75%;
   padding-right: 10%;
 }
 .projects {
@@ -249,7 +252,7 @@ html, body {
   text-align: center;
   font-size: 400%;
   font-weight: 100;
-  margin-top:4%;
+  margin-top: 8%;
   margin-bottom: 0%;
   
 }
@@ -276,7 +279,7 @@ html, body {
   font-size: 100%;
   font-style: italic;
   color: white;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 .motto hr {
   border: 1px solid white;
@@ -286,9 +289,13 @@ html, body {
   display: flex;
   flex-direction: column;
   background-image: url(./assets/motto-background.png);
-  padding: 7%;
-  height: 950px;
   width: 100%;
+  height: 800px;
+}
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+  .experience {
+    height: 1200px;
+  }
 }
 .experience h1 {
   font-family: 'Forum', cursive;
@@ -300,14 +307,17 @@ html, body {
 .experience h3 {
   font-size: 20px;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
   margin-top: 0%;
   margin-left: 7%;
   letter-spacing: 2px;
 }
 .experienceHeader {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
+  margin-bottom: 5%;
 }
 .experiencesContainer {
   align-items: center;
@@ -315,15 +325,15 @@ html, body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 2%;
+  width: 85%;
+  margin-left: 10%;
 }
 .experienceCont-Item {
-  margin: 3%;
+  margin: 1%;
 }
 .experienceImage {
-  background-color: rgba(223, 215, 202,0.4);
+  /* background-color: rgba(223, 215, 202,0.4); */
   border-radius: 5%;
-  padding: 5%;
   height: 10rem;
   width: 10rem;
 }

@@ -10,7 +10,7 @@ export default function AboutMe() {
             <div>
                 <img className="aboutmeProfilePic"  alt="A headshot of Maya Murphy smiling." src={mayaProfile}/>
             </div>
-            <div>
+            <div className="about-content">
                 <PageHeader 
                     title="About Me"
                     subtitle="A LENS THAT HELPS ONE SEE CLEARLY"
