@@ -20,12 +20,12 @@ export default function Projects() {
                     CTALink="https://www.youtube.com/channel/UCHgzNgvOYjTWcMbBqdbwTJQ"
                 />
                 
-                    <Project 
-                        projectName="Very Funny Dad"
-                        projectDesc="This project is a Dad joke generator to honor his passing and dreams of being a comedian."
-                        projectCTA="Let's Laugh"
-                        CTALink="/veryfunnydad-game"
-                    />
+                <Project 
+                    projectName="Very Funny Dad"
+                    projectDesc="This project is a Dad joke generator to honor his passing and dreams of being a comedian."
+                    projectCTA="Let's Laugh"
+                    CTALink="https://dazzling-goldstine-3ef23a.netlify.app"
+                />
             </div>
         </div>
     )

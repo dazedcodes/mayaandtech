@@ -7,7 +7,7 @@ import '../App.css';
 export default function AboutMe() {
     return (
         <div className="aboutme parallax">
-            <img className="aboutmeProfilePic" alt="A headshot of Maya Murphy smiling." src={mayaProfile}/>
+            <img className="aboutmeProfilePic"  alt="A headshot of Maya Murphy smiling." src={mayaProfile}/>
             <PageHeader 
                 title="About Me"
                 subtitle="A LENS THAT HELPS ONE SEE CLEARLY"
