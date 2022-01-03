@@ -15,14 +15,14 @@ export default function Projects() {
             <div className="projectsContainer">
                 <Project
                     projectName="Maya & Tech"
-                    projectDesc="A YouTube channel created to help aspiring developers level up their programming skills."
+                    projectDesc="A YouTube channel created to provide aspiring developers resources to achieve their programming dreams."
                     projectCTA="Visit Channel"
                     CTALink="https://www.youtube.com/channel/UCHgzNgvOYjTWcMbBqdbwTJQ"
                 />
                 
                 <Project 
                     projectName="Very Funny Dad"
-                    projectDesc="This project is a Dad joke generator to honor his passing and dreams of being a comedian."
+                    projectDesc="To honor the passing of my father, Jarred Shane Murphy, I created this Dad joke generator to honor his dream of becoming a comedian."
                     projectCTA="Let's Laugh"
                     CTALink="https://dazzling-goldstine-3ef23a.netlify.app"
                 />
