@@ -1,23 +1,13 @@
 import './App.css';
-import Home from './components/Home';
-import AboutMe from './components/AboutMe';
-import Projects from './components/Projects';
-import Motto from './components/Motto';
-import Experience from './components/Experience';
-import Contact from './components/Contact';
-import Footer from "./components/Footer";
+import HomePage from './componentsV2/HomePage';
+import Home from './componentsV2/HomePage';
+
 
 function App() {
   return (
     <div className="App">
       <div className="App-body">
-        <Home />
-        <AboutMe  />
-        <Projects />
-        <Motto />
-        <Experience/>
-        <Contact />
-        <Footer/>
+        <HomePage/> 
       </div>
     </div>
   );
